@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details</title>
+</head>
+<body>
+    <h1>Account Details</h1>
+    <p>Name: {{ account['name'] }}</p>
+    <p>Email: {{ current_user }}</p>
+    <p>Balance: ${{ account['balance'] }}</p>
+
+    <a href="/transfer-funds">Transfer Funds</a><br>
+    <a href="/logout">Logout</a>
+</body>
+</html>
